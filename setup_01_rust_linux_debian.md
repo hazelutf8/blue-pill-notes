@@ -86,7 +86,7 @@ arm-none-eabi-readelf -h target/thumbv7m-none-eabi/debug/examples/blinky
 ```
 
 ##### Attach Debugger Server
-The below windows command line request launches `openocd` as the link between ST-LINK v2 probe and the `gdb` debugger.
+The below command request launches `openocd` as the link between ST-LINK v2 probe and the debugger.
 ```bash
 openocd -f interface/stlink-v2.cfg -f target/stm32f1x.cfg
 ```
@@ -105,7 +105,7 @@ echo "set auto-load safe-path /" >> ~/.gdbinit
 ```
 
 ##### Cargo Run
-Load/run the program with `cargo`/`gdb`. (Only non-release will allow proper breakpoints.)
+Load/run the program with `cargo`/`gdb`. (Use a build with debug info to allow breakpoints.)
 ```batch
 cargo run --features stm32f103 --example blinky
 ```
