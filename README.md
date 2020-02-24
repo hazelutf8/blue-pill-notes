@@ -13,8 +13,5 @@ PRs and issues are welcome for clarifications, typos, or guides.
 
 [Pinouts](hw_00_pinouts.md)
 
-#### Peripherial Examples
-
-[SPI Eth ENC28J60](hw_01_spi_eth_ENC28J60_rust.md)
 
 ------
